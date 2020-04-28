@@ -32,3 +32,25 @@ Cypress.Commands.add("seedAndVisit", (seedData = 'fixture:todos') => {
 
     cy.wait('@loadTodos');
 })
+
+Cypress.Commands.add("completeFirstItem", () => {
+    cy.server();
+
+    cy.route({
+      method: "PUT",
+      url: "/api/todos/*",
+      response: {
+        "id": 1,
+        "name": "Active todo",
+        "isComplete": true
+      },
+    }).as("completion")
+
+    cy.get(".todo-list li")
+      .first()
+      .as("activeItem")
+      .find(".toggle")
+      .click()
+
+    cy.wait("@completion")
+})

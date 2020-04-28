@@ -4,23 +4,7 @@ describe("Item completion", () => {
   })
 
   it("Toggles active item to completed", () => {
-    cy.route({
-      method: "PUT",
-      url: "/api/todos/*",
-      response: {
-        "id": 1,
-        "name": "Active todo",
-        "isComplete": true
-      },
-    }).as("completion")
-
-    cy.get(".todo-list li")
-      .first()
-      .as("activeItem")
-      .find(".toggle")
-      .click()
-
-    cy.wait("@completion")
+    cy.completeFirstItem()
 
     cy.get("@activeItem")
       .should("have.class", "completed")
