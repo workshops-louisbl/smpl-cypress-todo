@@ -2,18 +2,88 @@
   "todos": [
     {
       "id": 1,
-      "name": "Install Cypress",
+      "name": "Todo 1",
       "isComplete": false
     },
     {
       "id": 2,
-      "name": "Add some tests",
-      "isComplete": false
+      "name": "Todo 2",
+      "isComplete": true
     },
     {
-      "id": 3,
-      "name": "Profit!",
-      "isComplete": false
+      "name": "New task",
+      "isComplete": false,
+      "id": 4
+    },
+    {
+      "name": "item 4",
+      "isComplete": false,
+      "id": 5
+    },
+    {
+      "name": "item 5",
+      "isComplete": false,
+      "id": 6
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 7
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 8
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 9
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 10
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 11
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 12
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 13
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 14
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 15
+    },
+    {
+      "name": "This is a new task",
+      "isComplete": false,
+      "id": 16
+    },
+    {
+      "name": "A new todo",
+      "isComplete": false,
+      "id": 17
+    },
+    {
+      "name": "A new todo",
+      "isComplete": false,
+      "id": 18
     }
   ]
 }
