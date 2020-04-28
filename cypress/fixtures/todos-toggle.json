@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Active todo",
+    "isComplete": false
+  },
+  {
+    "id": 2,
+    "name": "Completed todo",
+    "isComplete": true
+  }
+]
