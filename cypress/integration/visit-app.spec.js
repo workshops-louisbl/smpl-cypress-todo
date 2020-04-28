@@ -1,13 +1,23 @@
 describe("Visit app", () => {
-  beforeEach(() => {
-    cy.seedAndVisit();
+  context("With existing todos", () => {
+    beforeEach(() => {
+      cy.seedAndVisit();
+    })
+
+    it("List todos from API", () => {
+      cy.get(".todo-list li")
+        .should("have.length", 3)
+    })
   })
 
-  it("loads the app successfully", () => {
-  })
+  context("Without existing todos", () => {
+    beforeEach(() => {
+      cy.seedAndVisit("fixture:empty");
+    })
 
-  it("List todos from API", () => {
-    cy.get(".todo-list li")
-      .should("have.length", 3)
+    it("Shows an empty list", () => {
+      cy.get(".todo-list li")
+        .should("have.length", 0)
+    })
   })
 })
