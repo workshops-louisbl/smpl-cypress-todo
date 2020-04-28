@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "Install Cypress",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "name": "Add some tests",
+      "isComplete": false
+    },
+    {
+      "id": 3,
+      "name": "Profit!",
+      "isComplete": false
+    }
+  ]
+}
