@@ -1,6 +1,6 @@
 describe("Form input", () => {
   it("Focuses on app load", () => {
-    cy.visit("/");
+    cy.seedAndVisit();
 
     cy.focused()
     .should("have.class", "new-todo")
@@ -9,7 +9,7 @@ describe("Form input", () => {
   it("Accepts input", () => {
     const typedText = "New task from test";
 
-    cy.visit("/");
+    cy.seedAndVisit();
 
     cy.get(".new-todo")
       .type(typedText)
