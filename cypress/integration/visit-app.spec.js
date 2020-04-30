@@ -6,7 +6,7 @@ describe("Visit app", () => {
 
     it("List todos from API", () => {
       cy.get(".todo-list li")
-        .should("have.length", 3)
+        .should("have.length", 2)
     })
   })
 
